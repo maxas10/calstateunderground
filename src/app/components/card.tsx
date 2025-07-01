@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "motion/react";
-import { useState, useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 
 interface cardProps {
     src: string,
