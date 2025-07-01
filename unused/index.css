@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+}
+#background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+#main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#left,
+#right {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#left {
+    width: 100vw;
+    background-color: #064E58;
+}
+
+#right {
+    width: 0vw;
+    background-color: #CDE2e5;
+}
+
+#left-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+@keyframes flowleft {
+    from {
+        width: 100vw;
+    }
+
+    to {
+        width: 25vw;
+    }
+}
+
+@keyframes moveup {
+    from {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    to {
+        top: 50px;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes flowright {
+    from {
+        width: 0vw;
+    }
+
+    to {
+        width: 75vw;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+    
+}

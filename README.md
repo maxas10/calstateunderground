@@ -1,2 +1,2 @@
 # Cal State Underground
-## About page for C.S.U. band
+About page for C.S.U. band
