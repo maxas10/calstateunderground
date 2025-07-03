@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: oklch(98.4% 0.014 180.72);
   --foreground: #171717;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/Poppins/Poppins-Regular.ttf");
 }
 
 @theme inline {
@@ -83,12 +87,6 @@ body {
 @media screen and (max-height: 520px) and ( min-width: 910px) {
   .background-picture {
     background-position-y: -100px;
-  }
-}
-
-@media screen and (max-width: 385px){
-  .logo-image {
-    display: none;
   }
 }
 .bar {
