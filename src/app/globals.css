@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -24,6 +24,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
+  font-weight: 400
 }
 
 @media screen and (max-width: 1290px) {
