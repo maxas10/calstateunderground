@@ -25,7 +25,7 @@ export default function Card(props: Readonly<cardProps>) {
 
     return (
         <motion.div
-            className={`flex h-fit bg-black overflow-hidden justify-center w-full shadow-lg rounded-2xl`}
+            className={`flex h-fit bg-black overflow-hidden justify-center w-full shadow-lg rounded-2xl card`}
             whileHover={{
                 scale: 1.05,
                 cursor: "pointer",

@@ -61,7 +61,7 @@ export default function Page() {
           <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 w-[750px] gap-5 mb-10 contact-form">
             <div>
               <label htmlFor="type">Inquiry Type: </label>
-              <select name="type" id='type' className="bg-white w-1/2 shadow-lg" defaultValue={""}>
+              <select name="type" id='type' className="w-1/2 shadow-lg form-select form" defaultValue={""}>
                 <option value="" disabled hidden></option>
                 <option value="Band">Band</option>
                 <option value="Collaboration">Collaboration</option>
@@ -70,21 +70,21 @@ export default function Page() {
             </div>
             <div className="flex flex-col">
               <label htmlFor="Name">Name</label>
-              <input type="text" name="name" className="bg-white shadow-lg" />
+              <input type="text" name="name" className="shadow-lg form" />
             </div>
             <div className="flex flex-col">
               <label htmlFor="Email">Email</label>
-              <input type="email" name="email" className="bg-white shadow-lg" />
+              <input type="email" name="email" className="shadow-lg form" />
             </div>
             <div className="flex flex-col">
               <label htmlFor="Subject">Subject</label>
-              <input type="text" name="subject" className="bg-white shadow-lg" />
+              <input type="text" name="subject" className="shadow-lg form" />
             </div>
             <div className="flex flex-col">
               <label htmlFor="Message">Message</label>
-              <textarea name="message" className="bg-white shadow-lg"></textarea>
+              <textarea name="message" className="shadow-lg form"></textarea>
             </div>
-            <motion.button whileTap={{ scale: 0.9 }} type="submit" className="cursor-pointer bg-white w-fit p-2 rounded-full shadow-lg">Submit</motion.button>
+            <motion.button whileTap={{ scale: 0.9 }} type="submit" className="cursor-pointer w-fit p-2 rounded-full shadow-lg form">Submit</motion.button>
           </form>
         </motion.div>
 
