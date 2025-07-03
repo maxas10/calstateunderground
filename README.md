@@ -2,8 +2,7 @@
 About page for C.S.U. band
 Website: [calstateunderground.vercel.app](https://calstateunderground.vercel.app)
 
-## Devlog
-
+---
 **NEWEST** beta ver. *0.0.3* 
 7/3/2025
 - mobile support
@@ -23,3 +22,4 @@ beta ver. *0.0.1*
 alpha ver. *0.0.1* 
 6/29/2025
 - simple title and description.
+---
