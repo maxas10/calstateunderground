@@ -58,7 +58,7 @@ export default function Page() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 w-[750px] gap-5 mb-10">
+          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 w-[750px] gap-5 mb-10 contact-form">
             <div>
               <label htmlFor="type">Inquiry Type: </label>
               <select name="type" id='type' className="bg-white w-1/2 shadow-lg" defaultValue={""}>

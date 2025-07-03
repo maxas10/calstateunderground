@@ -40,12 +40,12 @@ export default function Page() {
                 Songs
             </motion.p>
 
-            <div className="flex flex-row gap-5 w-full">
-                <div className="flex flex-col gap-5 w-1/3 p-5 ">
+            <div className="flex flex-row gap-5 w-full song-container">
+                <div className="flex flex-col gap-5 w-1/3 p-5 song-col">
                     <Card src="songs/departuretemp.mp4" index={1} desc="Departure (unreleased)" onHover={handleHover} activeIndex={activeIndex} onPlay={handlePlay}></Card>
                     <p className="text-xl ">Departure (coming soon)</p>
                 </div>
-                <div className="flex flex-col gap-5 w-1/3  p-5">
+                <div className="flex flex-col gap-5 w-1/3  p-5 song-col">
                     <Card src="songs/sunday2pm.mp4" index={2} desc="Sunday 2 P.M. (unreleased)" onHover={handleHover} activeIndex={activeIndex} onPlay={handlePlay}></Card>
                     <p className="text-xl ">Sunday 2 P.M. (coming soon)</p>
                 </div>

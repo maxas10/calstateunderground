@@ -25,3 +25,74 @@ body {
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 1290px) {
+  #navbar {
+    width: 100vw;
+    height: 75px;
+    z-index: 10;
+    flex-direction: row;
+  }
+
+  main {
+    margin-top: 75px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width:910px) {
+  .background-picture {
+    background-size: cover;
+  }
+
+  .p-20 {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .song-col {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+    .song-container {
+    flex-direction: column;
+  }
+  .song-col {
+    width: 100%;
+  }
+  
+  .cover-container {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-height: 670px) {
+  .background-picture {
+    background-position: top;
+  }
+}
+
+@media screen and (max-height: 520px) and ( min-width: 910px) {
+  .background-picture {
+    background-position-y: -100px;
+  }
+}
+
+@media screen and (max-width: 385px){
+  .logo-image {
+    display: none;
+  }
+}
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  border-radius: 100vh;
+}

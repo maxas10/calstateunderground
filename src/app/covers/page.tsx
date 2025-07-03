@@ -43,7 +43,7 @@ export default function Page() {
         Covers
       </motion.p>
 
-      <div className="gap-1 grid grid-cols-3">
+      <div className="gap-1 grid grid-cols-3 cover-container">
 
         <motion.div className="flex-col flex gap-1"
           initial={{ y: -20, opacity: 0 }}
