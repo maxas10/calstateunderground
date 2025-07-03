@@ -34,14 +34,14 @@ export default function Page() {
   };
   return (
     <div className="flex flex-col gap-2  p-20 box-border relative" onMouseMove={handleMouseMove}>
-      <motion.h1
+      <motion.p
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-2xl mb-10 underline-offset-5 underline "
       >
         Covers
-      </motion.h1>
+      </motion.p>
 
       <div className="gap-1 grid grid-cols-3">
 

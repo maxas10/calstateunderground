@@ -14,7 +14,7 @@ export default function Page() {
       {lines.map((line, index) => {
         if (line[1] == "title") {
           return (
-            <motion.h1
+            <motion.p
               key={index}
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -22,11 +22,11 @@ export default function Page() {
               className="text-2xl mb-10 underline-offset-5 underline "
             >
               {line[0]}
-            </motion.h1>
+            </motion.p>
           )
         } else if (line[1] == "subtitle") {
           return (
-            <motion.h2
+            <motion.p
               key={index}
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ export default function Page() {
               className="text-xl mb-2"
             >
               {line[0]}
-            </motion.h2>
+            </motion.p>
           )
         } else {
           return (

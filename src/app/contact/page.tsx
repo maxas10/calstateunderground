@@ -45,20 +45,20 @@ export default function Page() {
       <img src="loading.gif" className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10" style={{ display: loading ? "block" : "none" }}></img>
       <p className="fixed bottom-0 text-xs">Max Seung 2025.</p>
       <div className="flex flex-col gap-5 p-20 box-border tracking-wide">
-        <motion.h1
+        <motion.p
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-2xl mb-10 underline-offset-5 underline "
         >
           Contact
-        </motion.h1>
+        </motion.p>
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col shadow-lg p-5 w-[750px] gap-5 rounded-2xl mb-10">
+          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 w-[750px] gap-5 mb-10">
             <div>
               <label htmlFor="type">Inquiry Type: </label>
               <select name="type" id='type' className="bg-white w-1/2 shadow-lg" defaultValue={""}>
@@ -82,7 +82,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col">
               <label htmlFor="Message">Message</label>
-              <textarea name="message" className="bg-white"></textarea>
+              <textarea name="message" className="bg-white shadow-lg"></textarea>
             </div>
             <motion.button whileTap={{ scale: 0.9 }} type="submit" className="cursor-pointer bg-white w-fit p-2 rounded-full shadow-lg">Submit</motion.button>
           </form>
