@@ -5,17 +5,17 @@ About page for C.S.U. band
 Website: [calstateunderground.vercel.app](https://calstateunderground.vercel.app)
 
 ---
-**NEWEST** beta ver. *0.0.3* 
+**NEWEST** alpha ver. *0.0.4* 
 
 (7/3/2025)
 - mobile support/dynamic sizing
 ---
-beta ver. *0.0.2*
+alpha ver. *0.0.3*
 
 (7/2/2025)
 - front page now shows graduation picture
 ---
-beta ver. *0.0.1*
+alpha ver. *0.0.2*
 
 (7/1/2025)
 - menu system
