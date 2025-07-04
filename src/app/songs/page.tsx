@@ -24,11 +24,6 @@ export default function Page() {
         }
     };
 
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-    const handlePlay = (index: number) => {
-        setActiveIndex((prev) => (prev === index ? null : index)); // toggle play/pause
-    };
     return (
         <div className="flex flex-col gap-5 p-20 box-border tracking-wide" onMouseMove={handleMouseMove}>
             <motion.p
