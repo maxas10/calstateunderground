@@ -4,24 +4,16 @@ import { useRef, useEffect } from "react"
 
 interface cardProps {
     src: string,
+    link: string
     index: number,
     desc: string,
     onHover: (desc: string | null) => void;
-    activeIndex: number | null;
-    onPlay: (index: number) => void;
 }
 export default function Card(props: Readonly<cardProps>) {
-    const videoRef = useRef<HTMLVideoElement>(null);
+    // const videoRef = useRef<HTMLVideoElement>(null);
+    // useEffect(() => {
 
-    useEffect(() => {
-        if (!videoRef.current) return;
-        if (props.activeIndex === props.index) {
-            videoRef.current.play();
-        } else {
-            videoRef.current.pause();
-            videoRef.current.currentTime = 0;
-        }
-    }, [props.activeIndex, props.index]);
+    // });
 
     return (
         <motion.div
@@ -35,7 +27,7 @@ export default function Card(props: Readonly<cardProps>) {
                 rotate: `${Math.random() * 10 - 5}deg`,
             }}
             onTap={() => {
-                props.onPlay(props.index);
+                location.href=props.link
             }}
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1, transition: { delay: props.index * 0.1 } }}
@@ -43,9 +35,12 @@ export default function Card(props: Readonly<cardProps>) {
             onMouseEnter={() => props.onHover(props.desc)}
             onMouseLeave={() => props.onHover(null)}
         >
-            <video className="object-cover min-w-[200%]" ref={videoRef}>
+            <div className="object-cover min-w-[200%]">
+                <img src={props.src} alt="" />
+            </div>
+            {/* <video className="object-cover min-w-[200%]" ref={videoRef}>
                 <source src={props.src} type="video/mp4" />
-            </video>
+            </video> */}
 
 
         </motion.div>
