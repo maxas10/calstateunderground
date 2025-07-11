@@ -2,7 +2,6 @@
 import { motion } from "motion/react"
 import { useState } from "react"
 import Card from "../components/card";
-import { p } from "motion/react-client";
 
 
 export default function Page() {
