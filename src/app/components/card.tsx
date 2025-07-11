@@ -16,7 +16,7 @@ export default function Card(props: Readonly<cardProps>) {
 
     return (
         <motion.div
-            className={`flex h-fit bg-black overflow-hidden justify-center w-full shadow-lg rounded-2xl card`}
+            className={`flex h-fit bg-transparent overflow-hidden justify-center w-full shadow-lg rounded-2xl card`}
             whileHover={{
                 scale: 1.05,
                 cursor: "pointer",
@@ -34,7 +34,7 @@ export default function Card(props: Readonly<cardProps>) {
             onMouseEnter={() => props.onHover(props.desc)}
             onMouseLeave={() => props.onHover(null)}
         >
-            <div className="object-cover min-w-[200%]">
+            <div className="object-cover min-w-[200%] flex justify-center items-center">
                 <img src={props.src} alt="" />
             </div>
             {/* <video className="object-cover min-w-[200%]" ref={videoRef}>
