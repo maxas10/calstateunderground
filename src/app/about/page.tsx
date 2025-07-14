@@ -96,7 +96,7 @@ export default function Page() {
       <div className="flex flex-row gap-5 w-full song-container">
 
         <div className="flex flex-col gap-5 w-1/3 p-5 song-col">
-          <Card src="people/ryan.JPEG" link="https://www.instagram.com/ryannnn.__09" index={5} desc="@ryannnn.__09" onHover={handleHover}></Card>
+          <Card src="people/ryan.jpeg" link="https://www.instagram.com/ryannnn.__09" index={5} desc="@ryannnn.__09" onHover={handleHover}></Card>
           <p className="text-xl ">Ryan (freaky pianist)</p>
           <p>- Pianist</p>
         </div>
