@@ -44,6 +44,10 @@ export default function Page() {
                     <Card src="songs/sunday2pm.png" link="https://www.instagram.com/p/DKsTj4KSBgF/" index={2} desc="Sunday 2 P.M. (unreleased)" onHover={handleHover} ></Card>
                     <p className="text-xl ">Sunday 2 P.M. (coming soon)</p>
                 </div>
+                <div className="flex flex-col gap-5 w-1/3  p-5 song-col">
+                    <Card src="songs/sunday2pm.png" link="https://www.instagram.com/p/DKsTj4KSBgF/" index={2} desc="Sunday 2 P.M. (unreleased)" onHover={handleHover} ></Card>
+                    <p className="text-xl ">Yunho's Song</p>
+                </div>
             </div>
 
             {tooltip.visible && (
