@@ -36,17 +36,13 @@ export default function Page() {
             </motion.p>
 
             <div className="flex flex-row gap-5 w-full song-container h-[500px]"> {/*temporary height */}
-                <div className="flex flex-col gap-5 w-1/3 p-5 song-col">
-                    <Card src="songs/departure.png" link="" index={1} desc="Departure (unreleased)" onHover={handleHover}></Card>
-                    <p className="text-xl ">Departure (no preview) (coming soon)</p>
+                <div className="flex flex-col gap-5  p-5 song-col">
+                    <Card src="sunday2pm.jpg" link="https://open.spotify.com/track/5gNiMPfCw7TvZaYSwUy07G?si=514b81e3cfe14c5d" index={2} desc="Sunday 2 P.M." onHover={handleHover} ></Card>
+                    <p className="text-xl ">Sunday 2 P.M.</p>
                 </div>
-                <div className="flex flex-col gap-5 w-1/3  p-5 song-col">
-                    <Card src="songs/sunday2pm.png" link="https://www.instagram.com/p/DKsTj4KSBgF/" index={2} desc="Sunday 2 P.M. (unreleased)" onHover={handleHover} ></Card>
-                    <p className="text-xl ">Sunday 2 P.M. (coming soon)</p>
-                </div>
-                <div className="flex flex-col gap-5 w-1/3  p-5 song-col">
-                    <Card src="people/yunho.png" link="" index={2} desc="Yunho&apos;s Song (unreleased)" onHover={handleHover} ></Card>
-                    <p className="text-xl ">Yunho&apos;s Song (coming soon)</p>
+                <div className="flex flex-col gap-5  p-5 song-col">
+                    <Card src="propane.jpg" link="https://open.spotify.com/track/3xk1RJPnakrHC8jfXMYptJ?si=28949741457142d3" index={2} desc="Propane (instrumental demo)" onHover={handleHover} ></Card>
+                    <p className="text-xl ">Propane</p>
                 </div>
             </div>
 
