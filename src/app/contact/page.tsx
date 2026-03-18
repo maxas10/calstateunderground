@@ -94,7 +94,7 @@ export default function Page() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}>
           <a
-            href="https://www.instagram.com/cal.state_underg/"
+            href="https://www.instagram.com/caliground/"
             target="_blank"
           ><img src="instagram.png" alt="" className="w-10 h-10" /></a>
         </motion.div>

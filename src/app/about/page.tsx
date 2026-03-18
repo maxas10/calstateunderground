@@ -7,8 +7,7 @@ import Card from "../components/card";
 export default function Page() {
   const lines: string[][] = [
     ["About", "title"],
-    ["Bio", "subtitle"],
-    ["Cal State Underground is an alternative rock band based in the Bay Area, California.", "p"],
+    ["Caliground (formerly known as Cal State Underground) is an alternative rock band based in the Bay Area, California.", "p"],
     ["Created in 2024, the band consists of 7 members.", "p"],
     ["", "p"],
   ];
