@@ -1,5 +1,5 @@
-# Cal State Underground
+# Caliground
 
-About page for C.S.U. band
+About page for Caliground
 
 Website: [caliground.vercel.app](https://caliground.vercel.app)
