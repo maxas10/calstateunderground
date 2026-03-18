@@ -2,4 +2,4 @@
 
 About page for C.S.U. band
 
-Website: [calstateunderground.vercel.app](https://calstateunderground.vercel.app)
+Website: [caliground.vercel.app](https://caliground.vercel.app)
