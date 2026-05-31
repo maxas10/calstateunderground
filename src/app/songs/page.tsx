@@ -2,70 +2,51 @@
 import { motion } from "motion/react"
 import Card from "../components/card";
 import { useState } from "react";
+import Image from "next/image"
+import FloatingItem from "../components/floatingitem";
 export default function Page() {
-    const [tooltip, setTooltip] = useState({
-        visible: false,
-        text: "",
-        x: 0,
-        y: 0,
-    });
 
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (tooltip.visible) {
-            setTooltip((t) => ({ ...t, x: e.clientX + 10, y: e.clientY + 10 }));
-        }
-    };
-
-    const handleHover = (desc: string | null) => {
-        if (desc) {
-            setTooltip((t) => ({ ...t, visible: true, text: desc }));
-        } else {
-            setTooltip((t) => ({ ...t, visible: false, text: "" }));
-        }
-    };
-
-    return (
-        <div className="flex flex-col gap-5 p-20 box-border tracking-wide" onMouseMove={handleMouseMove}>
-            <motion.p
-                initial={{ y: -20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-2xl mb-10 underline-offset-5 underline "
-            >
-                Songs
-            </motion.p>
-
-            <div className="flex flex-row gap-5 w-full song-container h-[500px]"> {/*temporary height */}
-                <div className="flex flex-col gap-5  p-5 song-col">
-                    <Card src="sunday2pm.jpg" link="https://open.spotify.com/track/5gNiMPfCw7TvZaYSwUy07G?si=514b81e3cfe14c5d" index={2} desc="Sunday 2 P.M." onHover={handleHover} ></Card>
-                    <p className="text-xl ">Sunday 2 P.M.</p>
-                </div>
-                <div className="flex flex-col gap-5  p-5 song-col">
-                    <Card src="propane.jpg" link="https://open.spotify.com/track/3xk1RJPnakrHC8jfXMYptJ?si=28949741457142d3" index={2} desc="Propane (instrumental demo)" onHover={handleHover} ></Card>
-                    <p className="text-xl ">Propane</p>
-                </div>
-            </div>
-
-            {tooltip.visible && (
-                <div
-                    style={{
-                        position: "fixed",
-                        top: tooltip.y,
-                        left: tooltip.x,
-                        backgroundColor: "rgba(0,0,0,0.8)",
-                        color: "white",
-                        padding: "6px 10px",
-                        borderRadius: 6,
-                        pointerEvents: "none",
-                        whiteSpace: "nowrap",
-                        zIndex: 9999,
-                        userSelect: "none",
-                        transform: "translate(0%, 0%)",
-                    }}
-                >
-                    {tooltip.text}
-                </div>
-            )}
+    return <div className="flex flex-col gap-10 w-1/2 pt-[2vh] pb-[2vh]">
+        <h1 className="text-2xl">songs</h1>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/sunday2pm.jpg"} width={200} height={200} alt={""}></Image>
+            <p className="text-2xl">Sunday 2PM</p>
         </div>
-    );
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/propane.jpg"} width={200} height={200} alt={""}></Image>
+            <p className="text-2xl">Propane</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Dawn</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">American Life</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Bury Me In Roses</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Deflation</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Puncture</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Stonefish</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Untitled Love Song</p>
+        </div>
+        <div className="flex flex-row gap-10 items-center">
+            <Image src={"/newlogo.jpg"} width={200} height={200} alt={""} className="grayscale blur-xs"></Image>
+            <p className="text-2xl">Tidal Waves</p>
+        </div>
+    </div>
 }

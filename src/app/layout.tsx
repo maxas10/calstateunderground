@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import Brand from "./components/brands";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CaliGround",
+  title: "caliground",
   description: "Rock band, Bay Area",
 };
 
@@ -27,9 +28,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex h-screen">
+        <div className="flex h-screen flex-col">
           <Navbar />
-          <main className=" text-teal-950 ml-72 grow">{children}</main>
+          <main className="w-screen flex-1 flex justify-center">{children}</main>
+          <Brand></Brand>
         </div>
       </body>
     </html>

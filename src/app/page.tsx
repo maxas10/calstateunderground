@@ -1,19 +1,17 @@
 "use client";
 import { motion } from "motion/react"
+import Image from "next/image"
+import FloatingItem from "./components/floatingitem";
+
+
 export default function Page() {
-  // const userExists = false;
-
-  // if (!userExists) {
-  //   notFound();
-  // }
-  return (
-
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.1 }}
-      className="flex flex-col gap-2 h-full p-20 box-border justify-center items-center bg-cover bg-center background-picture bg-no-repeat"
-      style={{ backgroundImage: "url('/graduation.jpg')" }}>
-    </motion.div>
-  );
+  return <div className="flex flex-col w-1/2" id="main-container">
+    <div className="flex items-center justify-center flex-1 gap-20" id="page-container">
+      <FloatingItem src="/tidalwaves.jpg" onHover={() => { }} />
+      <div className="flex flex-col gap-2 ">
+        <h1 className="text-8xl vadionka">tidal waves</h1>
+        <p>album releasing soon</p>
+      </div>
+    </div>
+  </div>;
 }
