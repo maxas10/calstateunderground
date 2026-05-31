@@ -1,8 +1,4 @@
 "use client";
-import { motion } from "motion/react"
-import { useState } from "react"
-import Card from "../components/card";
-import Image from "next/image"
 import Link from "next/link";
 
 export default function Page() {

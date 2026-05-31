@@ -1,9 +1,5 @@
 "use client";
-import { motion } from "motion/react"
-import Card from "../components/card";
-import { useState } from "react";
 import Image from "next/image"
-import FloatingItem from "../components/floatingitem";
 export default function Page() {
 
     return <div className="flex flex-col gap-10 w-1/2 pt-[2vh] pb-[2vh]">
