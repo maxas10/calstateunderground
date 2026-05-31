@@ -9,10 +9,6 @@ interface FloatingItemProps {
 export default function FloatingItem(props: FloatingItemProps) {
 
 
-    const bobUpAndDown = () => {
-        
-    }
-
     // const handleIdle = () => {
     //     props.onHover()
     // }

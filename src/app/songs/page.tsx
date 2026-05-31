@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"
+import Image from "next/image";
 export default function Page() {
 
     return <div className="flex flex-col gap-10 w-1/2 pt-[2vh] pb-[2vh]">
