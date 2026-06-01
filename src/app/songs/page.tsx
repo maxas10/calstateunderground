@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function Page() {
 
-    return <div className="flex flex-col gap-10 w-1/2 p-[2vh] overflow-x-hidden overflow-y-scroll">
+    return <div className="flex flex-col gap-10 w-1/2 p-[2vh] overflow-x-hidden">
         <h1 className="text-2xl">songs</h1>
         <div className="flex flex-row gap-10 items-center">
             <Image src={"/sunday2pm.jpg"} width={200} height={200} alt={""}></Image>
