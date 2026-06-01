@@ -41,24 +41,25 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col gap-5 box-border tracking-wide w-1/2 p-[2vh]" id="contact-container">
       <img src="loading.gif" className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10" style={{ display: loading ? "block" : "none" }}></img>
       <p className="fixed bottom-0 text-xs">Max Seung 2025.</p>
-      <div className="flex flex-col gap-5 p-20 box-border tracking-wide">
+      <div className="flex flex-col gap-5 box-border tracking-wide w-full">
         <motion.p
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-2xl mb-10 underline-offset-5 underline "
+          className="text-2xl"
         >
-          Contact
+          contact
         </motion.p>
         <motion.div
+          className="w-full"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 w-[750px] gap-5 mb-10 contact-form">
+          <form onSubmit={handleSubmit} method="post" name="contact-form" className="flex flex-col p-5 gap-5 contact-form">
             <div>
               <label htmlFor="type">Inquiry Type: </label>
               <select name="type" id='type' className="w-1/2 shadow-lg form-select form" defaultValue={""}>
@@ -89,15 +90,6 @@ export default function Page() {
         </motion.div>
 
         <motion.p className="mb-10" initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }}>Or email: <span className="font-bold">support@mseung.dev</span></motion.p>
-        <motion.div className="gap-8"
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}>
-          <a
-            href="https://www.instagram.com/caliground/"
-            target="_blank"
-          ><img src="instagram.png" alt="" className="w-10 h-10" /></a>
-        </motion.div>
       </div>
     </div>
   );
